@@ -1,0 +1,30 @@
+</html>
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Карусель на JavaScript</title> 
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <style> 
+        *{ 
+            transition: all linear .3s; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <div class="w-[480px] whitespace-nowrap overflow-hidden"> 
+        <ul id="carousel" class="*:inline-block *:p-2"> 
+            <li><img src="./img/01.jpg" class="block rounded-full w-40 h-40 object-cover"></li> 
+            <li><img src="./img/02.webp" class="block rounded-full w-40 h-40 object-cover"></li> 
+            <li><img src="./img/03.jpg" class="block rounded-full w-40 h-40 object-cover"></li> 
+            <li><img src="./img/04.jpeg" class="block rounded-full w-40 h-40 object-cover"></li> 
+            <li><img src="./img/05.jpeg" class="block rounded-full w-40 h-40 object-cover"></li> 
+        </ul> 
+    </div> 
+    <div class="flex gap-4 *:bg-gray-600 *:py-2 *:px-8"> 
+        <button onclick="prew()">Назад</button> <button onclick="nuxt()">Вперед</button> 
+    </div> 
+    <script src="main.js"></script> 
+</body> 
+</html>
